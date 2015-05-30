@@ -1,7 +1,10 @@
 !!!
 %html
   %header
+  .container
+    = partial("layouts/header")
   %body{:class => page_classes}
+  .container
     = yield
   %footer
 	

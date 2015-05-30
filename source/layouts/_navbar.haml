@@ -1,29 +1,26 @@
-%nav.navbar.navbar-inverse
-  %a.navbar-brand{:href => "/"} Mellow Miles
-  %ul.nav.navbar-nav
-    %li.dropdown
-      %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-        Bikes
-        %span.caret
-      %ul.dropdown-menu{:role => "menu"}
-        %li.divider
+%nav.navbar.navbar-default.navbar-inverse{:role => "navigation"}
+  #navfluid.container-fluid
+    .navbar-header
+      %button.navbar-toggle{"data-target" => "#navigationbar", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => "/"} Mellow Miles
+    #navigationbar.collapse.navbar-collapse
+      %ul.nav.navbar-nav
         %li
           %a{:href => "#"} Racing Bikes
-        %li.divider
         %li
           %a{:href => "#"} Mountain Bikes
-        %li.divider
         %li
           %a{:href => "#"} Childrens Bikes
-        %li.divider
         %li
           %a{:href => "#"} Folding Bikes
-        %li.divider
-    %li
-      %a{:href => "#"} Accesories
-    %li
-      %a{:href => "#"} Servicing
-    %li
-  %ul.nav.navbar-nav.navbar-right
-    %li
-      %a{:href => "#"} Contact Us &nbsp;
+        %li
+          %a{:href => "./Rueckblick.html"} Accesories
+        %li
+          %a{:href => "./Wettbewerb.html"} Servicing
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{:href => "./anmelden.html"} Contact Us

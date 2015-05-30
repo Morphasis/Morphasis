@@ -3,8 +3,9 @@
   text-align: justify;
   font-family: 'Arial';
 }
-.h5{
-  font-size: 24px;
+.body-text{
+  font-size: 19px;
+line-height: 100%;
 }
 // side bar ------------------------------->
 .sidebar{
@@ -14,6 +15,7 @@
 .branding{
   content:url(../images/branding.jpg);
   width: 100%;
+  margin-bottom: 20px;
 }
 // dropdown ------------------------------->
 .panel-heading a:after {
@@ -24,4 +26,14 @@
 }
 .panel-heading a.collapsed:after {
     content:"\e080";
+}
+// panels --------------------------------->
+.panel-default{
+  background-color: lightgrey;
+  padding: 7px;
+}
+.panel-header{
+  background-color: grey;
+  margin: 0;
+  padding: 10px;
 }

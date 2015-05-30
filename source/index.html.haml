@@ -32,18 +32,33 @@ title: Mellow Miles
             %span.icon-bar
             %span.icon-bar
           / navbar-brand is hidden on larger screens, but visible when the menu is collapsed
-          %a.navbar-brand{:href => "index.html"} Business Casual
+          %a.navbar-brand{:href => "/"} Mellow Miles
         / Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav
             %li
               %a{:href => "index.html"} Home
+            %li.dropdown
+              %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                Bikes
+                %span.caret
+              %ul.dropdown-menu{:role => "menu"}
+                %li
+                  %a{:href => "about.html"} Racing bikes
+                %li
+                  %a{:href => "about.html"} Mountain bikes
+                %li
+                  %a{:href => "about.html"} Children's bikes
+                %li
+                  %a{:href => "about.html"} Folding Bikes
+                %li
+                  %a{:href => "about.html"} Town bikes
             %li
-              %a{:href => "about.html"} About
+              %a{:href => "about.html"} Accessories
             %li
-              %a{:href => "blog.html"} Blog
+              %a{:href => "about.html"} Servicing
             %li
-              %a{:href => "contact.html"} Contact
+              %a{:href => "about.html"} Contact Us
         / /.navbar-collapse
       / /.container
     .container

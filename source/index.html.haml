@@ -1,12 +1,112 @@
 ---
 title: Mellow Miles
 ---
-.branding
-.row
-  .col-md-9.textfield
-    =partial('layouts/hometext')
-  .col-md-3.sidebar
-    %img.sideimage{:src => "../images/rbp.jpg"}/
-    %img.sideimage{:src => "../images/velo.jpg"}/
-    %img.sideimage{:src => "../images/np.jpg"}/
-    %img.sideimage{:src => "../images/mb.jpg"}/
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "", :name => "author"}/
+    %title Mellow Miles
+    / Fonts
+    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic", :rel => "stylesheet", :type => "text/css"}/
+    / HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    / WARNING: Respond.js doesn't work if you view the page via file://
+    /[if lt IE 9]
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  %body
+    .brand Mellow Miles
+    .address-bar Mellow Miles Cycles, 67 Victoria Road, Horley, Surrey, RH6 7QH
+    / Navigation
+    %nav.navbar.navbar-default{:role => "navigation"}
+      .container
+        / Brand and toggle get grouped for better mobile display
+        .navbar-header
+          %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          / navbar-brand is hidden on larger screens, but visible when the menu is collapsed
+          %a.navbar-brand{:href => "index.html"} Business Casual
+        / Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          %ul.nav.navbar-nav
+            %li
+              %a{:href => "index.html"} Home
+            %li
+              %a{:href => "about.html"} About
+            %li
+              %a{:href => "blog.html"} Blog
+            %li
+              %a{:href => "contact.html"} Contact
+        / /.navbar-collapse
+      / /.container
+    .container
+      .row
+        .box
+          .col-lg-12.text-center
+            #carousel-example-generic.carousel.slide
+              / Indicators
+              %ol.carousel-indicators.hidden-xs
+                %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
+                %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
+                %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
+              / Wrapper for slides
+              .carousel-inner
+                .item.active
+                  %img.img-responsive.img-full{:alt => "", :src => "../images/slide-1.jpg"}/
+                .item
+                  %img.img-responsive.img-full{:alt => "", :src => "../images/slide-2.jpg"}/
+                .item
+                  %img.img-responsive.img-full{:alt => "", :src => "../images/slide-3.jpg"}/
+              / Controls
+              %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic"}
+                %span.icon-prev
+              %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic"}
+                %span.icon-next
+            %h2.brand-before
+              %small Welcome to
+            %h1.brand-name Mellow Miles
+            %hr.tagline-divider/
+            %h2
+              %small
+                The Cycle website.
+      .row
+        .box
+          .col-lg-12
+            %hr/
+            %h2.intro-text.text-center
+              A Cycle Shop
+              %strong worth visiting
+            %hr/
+            %img.img-responsive.img-border.img-left{:alt => "", :src => "../images/rbp.jpg"}/
+            %hr.visible-xs/
+            %p For most people, riding a bicycle is introduced to us at a very young age and for many people it is their earliest memory of experiencing success and achievement – do you remember the first time you rode your bike without assistance? The thrill as a child of riding your bike with friends and the freedom it offered you?
+            %p
+              Well, at Mellow Miles Cycles we firmly believe that cycling should be enjoyed by everyone, regardless of age, physical fitness or working commitments...
+              %a{:href => "http://join.deathtothestockphoto.com/", :target => "_blank"} Read more -->
+      .row
+        .box
+          .col-lg-12
+            %hr/
+            %h2.intro-text.text-center
+              Beautiful boxes
+              %strong to showcase your content
+            %hr/
+            %p Use as many boxes as you like, and put anything you want in them! They are great for just about anything, the sky's the limit!
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+    / /.container
+    %footer
+      .container
+        .row
+          .col-lg-12.text-center
+            %p Copyright © Your Website 2014
+    :javascript
+      $('.carousel').carousel({
+          interval: 5000 //changes the speed
+      })

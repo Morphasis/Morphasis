@@ -1,10 +1,6 @@
 !!!
 %html
-  %header
-  .container
-    = partial("layouts/navbar")
   %body{:class => page_classes}
-  .container
     = yield
   %footer
 = stylesheet_link_tag "all"

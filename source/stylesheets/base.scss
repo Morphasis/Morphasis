@@ -4,6 +4,7 @@
   font-family: 'Arial';
 }
 .body-text{
+  font-color: #eaeeef;
   font-size: 19px;
 line-height: 100%;
 }
@@ -15,6 +16,7 @@ line-height: 100%;
 .branding{
   content:url(../images/branding.jpg);
   width: 100%;
+  padding: 0px;
   margin-bottom: 20px;
 }
 // dropdown ------------------------------->
@@ -29,11 +31,24 @@ line-height: 100%;
 }
 // panels --------------------------------->
 .panel-default{
-  background-color: lightgrey;
+  background-color: #999999;
   padding: 7px;
 }
 .panel-header{
-  background-color: grey;
+  background-color: #666666;
   margin: 0;
   padding: 10px;
+}
+.panel{
+  
+}
+// images --------------------------------->
+.sideimage{
+  width: 100%;
+  padding: 2px;
+  background-color:#336699;
+}
+// navbar
+.navbar {
+    margin-bottom: 0;
 }

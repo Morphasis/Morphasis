@@ -45,12 +45,16 @@ title: Mellow Miles
               %ul.dropdown-menu{:role => "menu"}
                 %li
                   %a{:href => "/"} Racing bikes
+                %li.divider
                 %li
                   %a{:href => "/"} Mountain bikes
+                %li.divider
                 %li
                   %a{:href => "/"} Children's bikes
+                %li.divider
                 %li
                   %a{:href => "/"} Folding Bikes
+                %li.divider
                 %li
                   %a{:href => "/"} Town bikes
             %li
@@ -102,8 +106,7 @@ title: Mellow Miles
             %hr.visible-xs/
             %p For most people, riding a bicycle is introduced to us at a very young age and for many people it is their earliest memory of experiencing success and achievement – do you remember the first time you rode your bike without assistance? The thrill as a child of riding your bike with friends and the freedom it offered you?
             %p
-              Well, at Mellow Miles Cycles we firmly believe that cycling should be enjoyed by everyone, regardless of age, physical fitness or working commitments...
-              %a{:href => "http://join.deathtothestockphoto.com/", :target => "_blank"} Read more -->
+              Well, at Mellow Miles Cycles we firmly believe that cycling should be enjoyed by everyone, regardless of age, physical fitness or working commitments, and we have a full range of cycles and accessories to suit all requirements and budgets. Whether you are looking for a fully loaded bespoke-made racing bike, a folding bike for commuting, a rugged mountain bike or your child’s first bike with stabilisers and a basket, Mellow Miles are here to help and will always offer our expertise to ensure that you can make your purchase equipped with the best knowledge.
 
       .row
         .box
@@ -115,7 +118,10 @@ title: Mellow Miles
             %img.img-responsive.img-border.img-left{:alt => "", :src => "../images/mb.jpg"}/
             %hr.visible-xs/
             %p As an independent cycle shop, Mellow Miles are not restricted or incentivised to sell you a specific make of bike or accessory, unlike many larger shops and chains. Our guidance and advice is entirely impartial and we guarantee that your best interests are our number 1 concern.
-            %a{:href => "http://join.deathtothestockphoto.com/", :target => "_blank"} Read more -->
+            %a.accordion-toggle{"data-parent" => "#accordion2", "data-toggle" => "collapse", :href => "#collapse"} Read more -->
+            #collapse.accordion-body.collapse
+              .accordion-inner
+                %p Although our shop may appear to be small, we have superb buying power and are able to source a bike for you from a range of over 150 different bikes and numerous different manufacturers. That's why, when you buy a bike from Mellow Miles, you will get the bike that's right for you at an extremely competitive price, delivered quickly, and with the exact accessories that you require.
 
       .row
         .box
@@ -126,8 +132,11 @@ title: Mellow Miles
             %hr.tagline-divider
             %img.img-responsive.img-border.img-left{:alt => "", :src => "../images/np.jpg"}/
             %hr.visible-xs/
-            %p Mellow Miles Cycles is owned and run by Nigel Brown, a former British Cycling champion and a man who has spent his entire adult life working in the cycle industry. Whilst we stock and sell many leisure bikes at extremely competitive prices, we are specialist retailers of some of the best cycle brands in the World including Basso, Moda, Ridgeback and Forme.
-            %a{:href => "http://join.deathtothestockphoto.com/", :target => "_blank"} Read more -->
+            %p Mellow Miles Cycles is owned and run by Nigel Brown, a former British Cycling champion and a man who has spent his entire adult life working in the cycle industry. Whilst we stock and sell many leisure bikes at extremely competitive prices, we are specialist retailers of some of the best cycle brands in the World including Basso, Moda, Ridgeback and Forme. We stock many of the best racing bikes from these leading brands and we can of course also build you your own unique customised bike using a combination of the best frames and components.
+            %a.accordion-toggle{"data-parent" => "#accordion2", "data-toggle" => "collapse", :href => "#collapseTwo"} Read more -->
+            #collapseTwo.accordion-body.collapse
+              .accordion-inner
+                %p So please, enjoy our website, browse some of our brands, products, and repair services. But please remember, we believe that finding a cycle that’s right for the customer is a personal experience – like buying a pair of shoes, it is important that all size specifications are taken into consideration along with your personal style preference. The best way to do this is in person, so why not give us a call or come and visit the Mellow Miles Cycle shop in Horley where we will greet you with a smile and make your individual requirements our primary concern.
 
             
     / /.container
@@ -136,7 +145,19 @@ title: Mellow Miles
         .row
           .col-lg-12.text-center
             %p Copyright © Jack Sharville
+            
     :javascript
       $('.carousel').carousel({
           interval: 5000 //changes the speed
       })
+
+:javascript
+  $('.SeeMore2').click(function(){
+  		var $this = $(this);
+  		$this.toggleClass('SeeMore2');
+  		if($this.hasClass('SeeMore2')){
+  			$this.text('See More');			
+  		} else {
+  			$this.text('See Less');
+  		}
+  	});

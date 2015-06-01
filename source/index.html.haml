@@ -19,8 +19,9 @@ title: Mellow Miles
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   %body
-    .brand Mellow Miles
-    .address-bar Mellow Miles Cycles, 67 Victoria Road, Horley, Surrey, RH6 7QH
+    / .brand Mellow Miles
+    / .address-bar Mellow Miles Cycles, 67 Victoria Road, Horley, Surrey, RH6 7QH
+    .branding
     / Navigation
     %nav.navbar.navbar-default{:role => "navigation"}
       .container
@@ -137,6 +138,22 @@ title: Mellow Miles
             #collapseTwo.accordion-body.collapse
               .accordion-inner
                 %p So please, enjoy our website, browse some of our brands, products, and repair services. But please remember, we believe that finding a cycle that’s right for the customer is a personal experience – like buying a pair of shoes, it is important that all size specifications are taken into consideration along with your personal style preference. The best way to do this is in person, so why not give us a call or come and visit the Mellow Miles Cycle shop in Horley where we will greet you with a smile and make your individual requirements our primary concern.
+
+      .row
+        .box
+          .col-lg-12
+            %hr/
+            %h2.intro-text.text-center
+              %strong Cycling Safely
+            %hr.tagline-divider
+            %img.img-responsive.img-border.img-left{:alt => "", :src => "../images/velo.jpg"}/
+            %hr.visible-xs/
+            %p 
+            It is vitally important that we learn proper road and cycle safety before endeavouring to ride on the roads. The proper personal safety equipment and clothing is essential but so too is a comprehensive knowledge of the Highway Code and an awareness of other people's actions. Most adult cyclists have developed this knowledge through experience of driving, but it is always worth reminding ourselves of the key points.
+            %p
+            The image below links through to the Government's road safety website that has lots of information on cycling safely and some fun games to help children learn:
+            %p
+            %img{:alt => "sl", :src => "../images/sl.jpg", :width => "350"}/
 
             
     / /.container

@@ -19,9 +19,9 @@ title: Mellow Miles
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   %body
-    / .brand Mellow Miles
-    / .address-bar Mellow Miles Cycles, 67 Victoria Road, Horley, Surrey, RH6 7QH
-    .branding
+    .brand Mellow Miles
+    .address-bar Mellow Miles Cycles, 67 Victoria Road, Horley, Surrey, RH6 7QH
+    / .branding.span12
     / Navigation
     %nav.navbar.navbar-default{:role => "navigation"}
       .container
@@ -67,7 +67,7 @@ title: Mellow Miles
     .container
       .row
         .box
-          .col-lg-12.text-center
+          .col-lg-8.text-center
             #carousel-example-generic.carousel.slide
               / Indicators
               %ol.carousel-indicators.hidden-xs
@@ -77,9 +77,9 @@ title: Mellow Miles
               / Wrapper for slides
               .carousel-inner
                 .item.active
-                  %img.img-responsive.img-full{:alt => "", :src => "../images/placeholder.jpg"}/
+                  %img.img-responsive.img-full{:alt => "", :src => "../images/bi.jpg"}/
                 .item
-                  %img.img-responsive.img-full{:alt => "", :src => "../images/placeholder.jpg"}/
+                  %img.img-responsive.img-full{:alt => "", :src => "../images/ba.jpg"}/
                 .item
                   %img.img-responsive.img-full{:alt => "", :src => "../images/placeholder.jpg"}/
               / Controls
@@ -87,13 +87,13 @@ title: Mellow Miles
                 %span.icon-prev
               %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic"}
                 %span.icon-next
-            %h2.brand-before
-              %small Welcome to
-            %h1.brand-name Mellow Miles
-            %hr.tagline-divider
-            %h2
-              %small
-                The Cycle website.
+          %h2.brand-before
+            %small Welcome to
+          %h1.brand-name Mellow Miles
+          %hr.tagline-divider
+          / %h2
+          /   %small
+          /     The Cycle website.
       .row
         .box
           .col-lg-12
@@ -163,10 +163,10 @@ title: Mellow Miles
           .col-lg-12.text-center
             %p Copyright © Jack Sharville
             
-    :javascript
-      $('.carousel').carousel({
-          interval: 5000 //changes the speed
-      })
+:javascript
+  $('.carousel').carousel({
+      interval: 5000 //changes the speed
+  })
 
 :javascript
   $('.SeeMore2').click(function(){

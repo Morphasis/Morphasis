@@ -1,14 +1,14 @@
 !!!
+/ Latest compiled and minified CSS
+%link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css", :rel => "stylesheet"}/
+/ Optional theme
+%link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css", :rel => "stylesheet"}/
 %html
   %body{:class => page_classes}
     = yield
   %footer
 = stylesheet_link_tag "all"
 = javascript_include_tag "all.js"
-/ Latest compiled and minified CSS
-%link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css", :rel => "stylesheet"}/
-/ Optional theme
-%link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css", :rel => "stylesheet"}/
 / Latest compiled and minified JavaScript
 %script{:src => "//code.jquery.com/jquery-1.11.3.min.js"}
 %script{:src => "//code.jquery.com/jquery-migrate-1.2.1.min.js"}

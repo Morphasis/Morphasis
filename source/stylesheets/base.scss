@@ -14,12 +14,19 @@ line-height: 100%;
 }
 // branding ------------------------------->
 .branding{
-  content:url(../images/branding.jpg);
-  padding: 0px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 20px;
-  margin-top: 20px;
+//  padding: 30px 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+//  background: #fff;
+//  background: rgba(255,255,255,0.9);
+}
+@media screen and (min-width:1200px) {
+    .branding:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
 }
 // dropdown ------------------------------->
 .panel-heading a:after {

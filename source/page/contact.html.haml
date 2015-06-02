@@ -1,25 +1,31 @@
+.container
+  .row
+    .branding
+      .col-lg-12
+        = image_tag '../images/contact.jpg'
 = partial 'navbar'
 .container
   .row
     .box
       .col-lg-8.text-center
-        %img.img-responsive.img-full{:alt => "", :src => "../images/map.png"}/
-      %h2.brand-name Contact Us
-      .opentimes.col-lg-4
-        %h3.brand-before
-          Opening Times:
-          %small
-            %p
-            Summer (from 9th April to 31st October)
-            %p
-            %p 
-            Monday to Friday: 9am - 6.30pm 
-            %p
-            (Winter closed thursday)
-            %p 
-            Saturday: 9am - 6pm
-            %p 
-            Sunday: 10am to 4pm
+        %img.img-responsive.img-full{:src => "../images/map.png"}/
+      .col-lg-4
+        %p
+        .opentimes
+          %h3.brand-before
+            Opening Times:
+            %small
+              %p
+              Summer (from 9th April to 31st October)
+              %p
+              %p 
+              Monday to Friday: 9am - 6.30pm 
+              %p
+              (Winter closed thursday)
+              %p 
+              Saturday: 9am - 6pm
+              %p 
+              Sunday: 10am to 4pm
   .row
     .box
       .col-lg-12

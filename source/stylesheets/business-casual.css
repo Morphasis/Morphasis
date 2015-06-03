@@ -162,6 +162,8 @@ footer p {
     }
 
     .navbar-default {
+        margin-top: 20px;
+        margin-bottom: 20px;
         border: none;
         background: #fff;
         background: rgba(255,255,255,0.9);
